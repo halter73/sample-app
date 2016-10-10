@@ -2,7 +2,7 @@ version: "2"
 services:
     service-a:
         build: ./service-a
-        image: sample-app/service-a
+        image: service-a
         environment:
             - APPINSIGHTS_INSTRUMENTATIONKEY
         ports:
@@ -12,7 +12,7 @@ services:
     
     service-b:
         build: ./service-b
-        image: sample-app/service-b
+        image: service-b
         environment:
             - APPINSIGHTS_INSTRUMENTATIONKEY
         expose:
