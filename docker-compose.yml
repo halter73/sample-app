@@ -2,7 +2,6 @@ version: "2"
 services:
     service-a:
         build: ./service-a
-        image: registry.marathon.mesos:5000/sample-app/service-a
         environment:
             - APPINSIGHTS_INSTRUMENTATIONKEY
         ports:
@@ -12,7 +11,6 @@ services:
     
     service-b:
         build: ./service-b
-        image: registry.marathon.mesos:5000/sample-app/service-b
         environment:
             - APPINSIGHTS_INSTRUMENTATIONKEY
         expose:
