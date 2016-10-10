@@ -1,4 +1,5 @@
 version: "2"
+
 services:
     service-a:
         build: ./service-a
@@ -15,3 +16,5 @@ services:
             - APPINSIGHTS_INSTRUMENTATIONKEY
         expose:
             - 80
+    myredis:
+        image: redis:3.0.7
