@@ -1,6 +1,6 @@
 version: "2"
 services:
-    service-a:
+    Service-A:
         build: ./service-a
         environment:
             - APPINSIGHTS_INSTRUMENTATIONKEY
