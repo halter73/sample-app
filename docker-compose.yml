@@ -16,5 +16,3 @@ services:
             - APPINSIGHTS_INSTRUMENTATIONKEY
         expose:
             - 80
-    myredis:
-        image: redis:3.0.7
