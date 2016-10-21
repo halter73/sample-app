@@ -2,7 +2,7 @@ version: "2"
 
 services:
     service-b-build:
-        image: microsoft/dotnet
+        image: microsoft/dotnet:1.0.0-preview2-sdk
         volumes:
             - ./service-b:/src
         working_dir: /src
