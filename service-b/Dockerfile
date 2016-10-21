@@ -1,4 +1,4 @@
-FROM microsoft/dotnet
+FROM microsoft/dotnet:core
 EXPOSE 80
 
 WORKDIR /app
