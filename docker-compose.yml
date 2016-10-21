@@ -6,13 +6,11 @@ services:
         environment:
             - APPINSIGHTS_INSTRUMENTATIONKEY
         ports:
-            - "8080:80"
-        links:
-            - service-b
+            - "80"
     
     service-b:
         build: ./service-b
         environment:
             - APPINSIGHTS_INSTRUMENTATIONKEY
         expose:
-            - 80
+            - "80"
