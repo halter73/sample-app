@@ -2,12 +2,14 @@ version: "2"
 
 services:
     service-a:
+        build: ./service-a
         environment:
             - APPINSIGHTS_INSTRUMENTATIONKEY
-        ports:
+        expose:
             - "80"
-    
+
     service-b:
+        build: ./service-b
         environment:
             - APPINSIGHTS_INSTRUMENTATIONKEY
         expose:

@@ -8,4 +8,4 @@ services:
         volumes:
             - ./service-a:/src
         working_dir: /src
-        command: ["phantomjs", "functional-tests.js"]
+        command: ["phantomjs", "service-tests.js"]
