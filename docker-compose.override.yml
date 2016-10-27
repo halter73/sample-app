@@ -1,6 +1,6 @@
 version: "2"
 
 services:
-    service-a:
+    service_a:
         ports:
             - "8080:80"
