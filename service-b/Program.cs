@@ -9,7 +9,10 @@ namespace ServiceB
         {
             var port = 80;
             new WebHostBuilder()
-                .UseKestrel()
+                .UseKestrel(options =>
+                {
+                    options.ShutdownTimeout = TimeSpan.FromSeconds(20);
+                })
                 .UseStartup<Startup>()
                 .UseUrls("http://*:" + port)
                 .Build()
